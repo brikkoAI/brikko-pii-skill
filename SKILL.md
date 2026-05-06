@@ -14,7 +14,6 @@ description: |
   — компания работает по 152-ФЗ и не может отправлять реальные ПД в OpenAI/Anthropic
   — нужно сохранить контекст «что клиент Иванов сказал» без раскрытия личности
 
-license: MIT
 homepage: https://brikko.ru
 repository: https://github.com/brikkoAI/brikko-pii-skill
 authors:
