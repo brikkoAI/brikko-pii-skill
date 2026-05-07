@@ -1,0 +1,13 @@
+# GitHub Linguist overrides — этот репо это AI-skill (Markdown + JSON),
+# не Python. Helper-скрипты в scripts/ не должны определять основной язык.
+
+# Не считать helper-скрипты основным языком репозитория.
+scripts/* linguist-vendored
+scripts/**/* linguist-vendored
+
+# Тестовые fixtures — тоже не репрезентативны.
+tests/fixtures/* linguist-generated
+
+# SKILL.md — это контракт skill'а, основной язык репозитория.
+SKILL.md linguist-detectable
+SKILL.md linguist-language=Markdown
