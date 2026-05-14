@@ -1,11 +1,19 @@
 # Brikko PII Mask Skill
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/brikkoAI/brikko-pii-skill?style=social)](https://github.com/brikkoAI/brikko-pii-skill/stargazers)
+[![Works with: Claude Code](https://img.shields.io/badge/works%20with-Claude%20Code-D97757.svg)](https://docs.claude.com/en/docs/claude-code/overview)
+[![Works with: Cursor](https://img.shields.io/badge/works%20with-Cursor-000000.svg)](https://cursor.com)
+[![Works with: OpenClaw](https://img.shields.io/badge/works%20with-OpenClaw-4F46E5.svg)](https://github.com/openclaw/openclaw)
+[![Works with: Codex](https://img.shields.io/badge/works%20with-Codex-10A37F.svg)](https://openai.com/codex)
+[![152-ФЗ](https://img.shields.io/badge/152--ФЗ-compliant-success.svg)](#privacy)
+
+> **Часть [Brikko Privacy Ecosystem](https://brikko.ru)** — open-source инфраструктура маскинга персональных данных перед AI для русского рынка.
+
 Skill для AI-агентов (OpenClaw, Claude Code, Codex), который маскирует
 персональные данные (ФИО, ИНН, СНИЛС, ОГРН, ОГРНИП, паспорт РФ, телефон,
 email, банковский счёт) в тексте перед отправкой в LLM, и восстанавливает
 плейсхолдеры в ответе.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 > Если ты делаешь AI-приложения для бизнеса в РФ и не хочешь, чтобы реальные
 > ИНН клиентов улетали в OpenAI/Anthropic — поставь этот skill, и агент
@@ -132,3 +140,16 @@ def with_pii_protection(prompt: str, llm_call) -> str:
 ## Лицензия
 
 MIT — см. [LICENSE](LICENSE).
+
+---
+
+## 🔗 Связанные продукты Brikko
+
+| Артефакт | Установка | Аудитория |
+|---|---|---|
+| [brikko-studio](https://github.com/brikkoAI/brikko-studio) | `curl install.brikko.ru/studio.sh \| bash` | Desktop AI agent с MCP |
+| [brikko-shield](https://github.com/brikkoAI/brikko-shield) | Chrome Web Store (скоро) | Маскинг в ChatGPT/Claude.ai |
+| [brikko-cli](https://github.com/brikkoAI/brikko-cli) | `npm install -g brikko-cli` | CLI для Studio |
+| **brikko-pii-skill** ★ (вы здесь) | `git clone` | Skill для Claude Code/Cursor |
+| [n8n-nodes-brikko](https://github.com/brikkoAI/n8n-nodes-brikko) | `npm install n8n-nodes-brikko` | Маскинг в n8n workflows |
+| [presidio-ru-recognizers](https://github.com/brikkoAI/presidio-ru-recognizers) | `pip install presidio-ru-recognizers` | Python recognizers для Presidio |
